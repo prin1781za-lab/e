@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const shareBtn = document.getElementById('shareBtn');
     
     editBtn.addEventListener('click', function() {
-        alert('Edit functionality would allow users to modify their profile information.');
-        console.log('Edit button clicked');
+        console.log('Edit button clicked - Edit functionality would allow users to modify their profile information.');
     });
     
     shareBtn.addEventListener('click', function() {
@@ -27,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function fallbackShare() {
         const url = window.location.href;
         navigator.clipboard.writeText(url).then(() => {
-            alert('Profile link copied to clipboard!');
+            console.log('Profile link copied to clipboard:', url);
         }).catch(() => {
-            alert('Share this profile: ' + url);
+            console.log('Share this profile:', url);
         });
     }
 });
