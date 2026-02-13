@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="avatar-container">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&size=200&background=4A90E2&color=fff" alt="User Avatar" class="avatar" id="avatar">
+                </div>
+                <h1 class="profile-name" id="profileName">John Doe</h1>
+                <p class="profile-title" id="profileTitle">Software Engineer</p>
+            </div>
+            
+            <div class="profile-info">
+                <h2>Profile Information</h2>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span class="info-value" id="email">john.doe@example.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span class="info-value" id="location">San Francisco, CA</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Member Since:</span>
+                    <span class="info-value" id="memberSince">January 2024</span>
+                </div>
+            </div>
+            
+            <div class="profile-bio">
+                <h2>About</h2>
+                <p id="bio">Passionate developer with experience in building scalable web applications. Love working with modern technologies and contributing to open source projects.</p>
+            </div>
+            
+            <div class="profile-actions">
+                <button class="btn btn-primary" id="editBtn">Edit Profile</button>
+                <button class="btn btn-secondary" id="shareBtn">Share</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
